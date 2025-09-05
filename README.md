@@ -76,6 +76,19 @@ This process runs an MCP server over stdio. In practice, an MCP-compatible clien
 
 ---
 
+## Important: always use the MCP shell tool (not direct CLI)
+
+For all command execution tasks, use the MCP shell server’s tool (`shell_run`) instead of running commands directly in a terminal. This ensures consistent behavior, logging, timeout control, sudo handling, and output truncation.
+
+- Do: invoke commands via the MCP client calling `shell_run` (see examples below).
+- Don’t: run commands directly in your shell prompt for workflows meant to be automated or audited.
+
+Examples:
+- Listing files (no shell usage): see “Programmatic example: list files without a shell”.
+- Installing software (e.g., using `curl | sh`): call the installer through `shell_run` and, if it needs sudo, provide `SHELL_MCP_SUDO_PASSWORD_FILE` or `SHELL_MCP_SUDO_PASSWORD` so the tool can inject `-S` and supply credentials non-interactively.
+
+---
+
 ## Configuration
 
 Configure behavior via environment variables:
