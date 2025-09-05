@@ -136,6 +136,37 @@ This server speaks standard MCP over stdio. Typical integration patterns:
 Since MCP client configuration varies by tool, consult your client’s documentation for how to register an MCP server executable.
 
 ---
+## Programmatic example: list files without a shell
+
+If you want to use the server’s tool directly in Python (without opening a shell or terminal), you can import the function and call it:
+
+```python
+from shell_mcp.server import shell_run
+
+# List all files in the current working directory (including dotfiles)
+result = shell_run('ls -a')
+print(result['stdout'])
+```
+
+Notes:
+- This uses the same implementation that the MCP server exposes as the `shell_run` tool.
+- The execution context honors environment variables like `SHELL_MCP_WORKDIR`, `SHELL_MCP_TIMEOUT`, and `SHELL_MCP_MAX_OUTPUT` if they’re set in the process environment.
+- You can pass a per-call timeout override: `shell_run('ls -a', timeout=10)`.
+
+To try this locally with the provided virtual environment:
+
+```bash
+cd shell-mcp
+. .venv/bin/activate
+python - <<'PY'
+from shell_mcp.server import shell_run
+print(shell_run('ls -a'))
+PY
+```
+
+This demonstrates running `ls -a` via the MCP server’s tool implementation without manually invoking a shell.
+
+---
 
 ## Troubleshooting
 
