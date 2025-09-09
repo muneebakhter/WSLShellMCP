@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>ACF-OGM-PPR Cover Page and Form B Program Indicators and Instructions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Accessibility / PDF metadata hints -->
+  <meta name="dc:title" content="ACF Performance Progress Report (ACF-OGM-PPR) – Cover Page & Appendix B Instructions" />
+  <meta name="dc:language" content="en" />
+  <meta name="dc:creator" content="Administration for Children and Families" />
+  <meta name="dc:publisher" content="U.S. Department of Health and Human Services" />
+  <meta name="description" content="Instructions and program indicator definitions for the ACF Performance Progress Report (ACF-OGM-PPR)." />
+
+  <style>
+    /* Base */
+    html, body { margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; font-size: 10pt; line-height: 1.35; padding: 1rem; color: #000; }
+
+    h1 { margin: 0.25rem 0; text-align: center; }
+    .heading-block { text-align: center; margin-top: 0.5rem; margin-bottom: 1rem; }
+
+    /* Tables */
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    caption { caption-side: top; font-weight: bold; text-align: center; padding: 4px; }
+    th, td { border: 1px solid #000; padding: 4px 6px; vertical-align: top; }
+    thead th { background: #c0c0c0; }
+
+    /* Emphasis rules from the source document */
+    .cover-page-table tbody td:nth-child(1),
+    .cover-page-table tbody td:nth-child(2) { font-weight: bold; }
+    .program-indicators-table tbody td:nth-child(2) { font-weight: bold; }
+    .spanning-row { text-align: center; background: #c0c0c0; font-weight: bold; }
+
+    /* Print / pagination safety so Edge preserves proper table tag structure */
+    @media print {
+      thead { display: table-header-group; }
+      tfoot { display: table-footer-group; }
+      tbody { display: table-row-group; }
+      tr, thead, tbody { break-inside: avoid; page-break-inside: avoid; }
+      .page-break { page-break-before: always; }
+      /* Ensure header background survives printing */
+      thead th, .spanning-row { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== COVER PAGE INSTRUCTIONS ===== -->
+  <div class="heading-block" aria-describedby="cover-caption">
+    <h1 style="font-size:16pt; letter-spacing:0.5px;">ACF PERFORMANCE PROGRESS REPORT</h1>
+    <h1 style="font-size:14pt;">ACF-OGM-PPR</h1>
+    <h1 style="font-size:12pt;">COVER PAGE INSTRUCTIONS</h1>
+    <p style="margin-top:0.8rem; font-size:11pt;">Administration for Children and Families<br>U.S. Department of Health and Human Services</p>
+  </div>
+
+  <table class="cover-page-table" aria-describedby="cover-caption">
+    <caption id="cover-caption">Cover Page Instructions – Items 1 through 10 (data elements and instructions)</caption>
+    <thead>
+      <tr>
+        <th id="c-item" scope="col" style="width:10%">Item</th>
+        <th id="c-data" scope="col" style="width:20%">Data Elements</th>
+        <th id="c-inst" scope="col" style="width:70%">Instructions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" id="c-r1">1.</th>
+        <td headers="c-data c-r1">Awarding Federal Agency and Organizational Element to Which Report is Submitted</td>
+        <td headers="c-inst c-r1">Enter the name of the awarding Federal agency and organizational element identified in the award document or otherwise instructed by the agency. The organizational element is the sub-agency within an awarding Federal agency.</td>
+      </tr>
+      <tr>
+        <th scope="row" id="c-r2">2.</th>
+        <td headers="c-data c-r2">Federal Grant or Other Identifying Number Assigned by the awarding Federal agency</td>
+        <td headers="c-inst c-r2">Enter the grant/award number contained in the award document.</td>
+      </tr>
+      <tr>
+        <th scope="row" id="c-r3a">3a.</th>
+        <td headers="c-data c-r3a">Unique Entity Identifier (UEI)</td>
+        <td headers="c-inst c-r3a">Enter the recipient organization’s Unique Entity Identifier (UEI) assigned by the System for Award Management (SAM).</td>
+      </tr>
+      <tr>
+        <th scope="row" id="c-r3b">3b.</th>
+        <td headers="c-data c-r3b">EIN</td>
+        <td headers="c-inst c-r3b">Enter the recipient organization’s Employer Identification Number (EIN) provided by the Internal Revenue Services.</td>
+      </tr>
+      <tr>
+        <th scope="row" id="c-r4">4.</th>
+        <td headers="c-data c-r4">Recipient Organization</td>
+        <td headers="c-inst c-r4">Enter the name of recipient organization and address, including zip code.</td>
+      </tr>
+      <tr>
+        <th scope="row" id="c-r5">5.</th>
+        <td headers="c-data c-r5">Recipient Account Number or Account Number</td>
+        <td headers="c-inst c-r5">Enter the account number or any other identifying number assigned by the recipient to the award. This number is strictly for the recipient’s use only and is not required by the awarding Federal agency.</td>
+      </tr>
+      <tr>
+        <th scope="row" id="c-r6">6.</th>
+        <td headers="c-data c-r6">Project/Grant Period</td>
+        <td headers="c-inst c-r6">Indicate the project/grant period established in the award document during which Federal sponsorship begins and ends. Note: Some agencies award multi-year grants for a project/grant period (e.g., 5 years) that are funded in increments known as budget periods or funding periods. These are typically annual increments. Please enter the project/grant period, not the budget period or funding period.</td>
+      </tr>
+      <tr>
+        <th scope="row" id="c-r7">7.</th>
+        <td headers="c-data c-r7">Reporting Period End Date</td>
+        <td headers="c-inst c-r7">Enter the ending date of the reporting period. For quarterly, semi-annual, and annual reports, the following calendar quarter period end dates shall be used: 3/31; 6/30; 9/30; and 12/31. For final PPRs, the reporting period end date shall be the end date of the project/grant period. The frequency of required reporting is usually established in the award document.</td>
+      </tr>
+      <tr>
+        <th scope="row" id="c-r8">8.</th>
+        <td headers="c-data c-r8">Final Report</td>
+        <td headers="c-inst c-r8">Mark appropriate box. Check “yes” only if this is the final report for the project/grant period specified in Box 6.</td>
+      </tr>
+      <tr>
+        <th scope="row" id="c-r9">9.</th>
+        <td headers="c-data c-r9">Report or Frequency</td>
+        <td headers="c-inst c-r9">Select the appropriate term corresponding to the requirements contained in the award document. “Other” may be used when more frequent reporting is required for high-risk recipients, as specified in OMB Circular A-110.</td>
+      </tr>
+      <tr>
+        <th scope="row" id="c-r10">10.</th>
+        <td headers="c-data c-r10">Performance Narrative</td>
+        <td headers="c-inst c-r10"><strong>Leave blank and complete Form ACF-OGM SF PPR Attachment B.</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ===== PROGRAM INDICATORS (APPENDIX B) ===== -->
+  <div class="heading-block page-break" aria-describedby="pi-caption">
+    <h1 style="font-size:16pt; letter-spacing:0.5px;">ACF PERFORMANCE PROGRESS REPORT</h1>
+    <h1 style="font-size:14pt;">Appendix B - Program Indicators</h1>
+    <h1 style="font-size:14pt;">ACF-OGM-PPR</h1>
+    <h1 style="font-size:12pt;" id="INSTRUCTIONS">INSTRUCTIONS</h1>
+  </div>
+
+  <div style="margin:0.8rem 0 1rem;">
+    <p style="margin:0;"><strong><u>Schedule</u></strong></p>
+    <p style="margin:0.35rem 0 0;">Submit the progress report form within the system (e.g., OLDC, GrantSolutions) and in the frequency (quarterly, semi-annually, annually) indicated in the grant award.</p>
+    <p style="margin:0.55rem 0 0;">A <u>FINAL</u> PROGRAM REPORT IS DUE 90 DAYS AFTER THE PROJECT PERIOD END DATE.</p>
+  </div>
+
+  <table class="program-indicators-table" aria-describedby="pi-caption">
+    <caption id="pi-caption">Appendix B – Program Indicators (award metadata and indicator narrative fields)</caption>
+    <thead>
+      <tr>
+        <th id="p-item" scope="col" style="width:10%">Item</th>
+        <th id="p-data" scope="col" style="width:25%">Data Elements</th>
+        <th id="p-inst" scope="col" style="width:65%">Instructions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" id="p-r1">1</th>
+        <td headers="p-data p-r1">Awarding Federal Agency and Organizational Element to Which Report is Submitted</td>
+        <td headers="p-inst p-r1">Enter the name of the awarding Federal agency and organizational element identified in the award document or otherwise instructed by the agency. The organizational element is a sub-agency within an awarding Federal agency.</td>
+      </tr>
+      <tr>
+        <th scope="row" id="p-r2">2</th>
+        <td headers="p-data p-r2">Federal Grant or Other Identifying Number Assigned by the awarding Federal agency</td>
+        <td headers="p-inst p-r2">Enter the grant/award number contained in the award document.</td>
+      </tr>
+      <tr>
+        <th scope="row" id="p-r3a">3a</th>
+        <td headers="p-data p-r3a">Unique Entity Identifier (UEI)</td>
+        <td headers="p-inst p-r3a">Enter the recipient organization’s Unique Entity Identifier (UEI) assigned by the System for Award Management (SAM).</td>
+      </tr>
+      <tr>
+        <th scope="row" id="p-r3b">3b</th>
+        <td headers="p-data p-r3b">EIN</td>
+        <td headers="p-inst p-r3b">Enter the recipient organization's Employer Identification Number (EIN) provided by the Internal Revenue Service.</td>
+      </tr>
+      <tr>
+        <th scope="row" id="p-r4">4</th>
+        <td headers="p-data p-r4">Reporting Period End Date</td>
+        <td headers="p-inst p-r4">Enter the ending date of the reporting period. For quarterly, semi-annual, and annual reports, the following calendar quarter reporting period end dates shall be used: 3/31; 6/30; 9/30 and 12/31. For final PPRs, the reporting period end date shall be the end date of the project/grant period. The frequency of required reporting is usually established in the award document.</td>
+      </tr>
+
+      <!-- Spanning row as a real header for the following group -->
+      <tr>
+        <th class="spanning-row" scope="colgroup" colspan="3">Program Indicators</th>
+      </tr>
+
+      <tr>
+        <th scope="row" id="p-rb01">B-01(4)</th>
+        <td headers="p-data p-rb01">Major activities and accomplishments during this period</td>
+        <td headers="p-inst p-rb01">Recommend use of project task charts from approved grant application and/or project work plan with this section. Describe any draft/final products in this section. Use additional pages if needed.</td>
+      </tr>
+      <tr>
+        <th scope="row" id="p-rb02">B-02(4)</th>
+        <td headers="p-data p-rb02">Problems</td>
+        <td headers="p-inst p-rb02">Describe any deviations or departures from the original project plan including actual/anticipated slippage in task completion dates, and special problems encountered or expected. Use this report section to advise Project Officer and Grants Management Specialist of assistance needs. Use additional pages if needed.</td>
+      </tr>
+      <tr>
+        <th scope="row" id="p-rb03">B-03(4)</th>
+        <td headers="p-data p-rb03">Significant findings and events</td>
+        <td headers="p-inst p-rb03">(To be noted by project officer, or reported to regions, States, other agencies, Program Director/Commissioner, Assistant Secretary, Secretary, etc.) Use additional pages if needed.</td>
+      </tr>
+      <tr>
+        <th scope="row" id="p-rb04">B-04(4)</th>
+        <td headers="p-data p-rb04">Dissemination activities</td>
+        <td headers="p-inst p-rb04">Briefly describe project-related inquiries and information dissemination activities carried out over the reporting period. Itemize and include copies of any published materials considered relevant to project activities or used for project information or public relations purposes. Use additional pages if needed.</td>
+      </tr>
+      <tr>
+        <th scope="row" id="p-rb05">B-05(4)</th>
+        <td headers="p-data p-rb05">Other activities</td>
+        <td headers="p-inst p-rb05">Briefly describe. Use additional pages if needed.</td>
+      </tr>
+      <tr>
+        <th scope="row" id="p-rb06">B-06(4)</th>
+        <td headers="p-data p-rb06">Activities planned for next reporting period</td>
+        <td headers="p-inst p-rb06">Briefly describe. Use additional pages if needed.</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
